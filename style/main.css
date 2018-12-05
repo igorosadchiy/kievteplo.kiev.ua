@@ -1,6 +1,6 @@
 /* IMPORT MODULES */
 @import url('https://fonts.googleapis.com/css?family=PT+Sans|Philosopher:300,400,500,600,700,900&subset=cyrillic');
-@import "lib/animate.min.css";
+/*@import "lib/animate.min.css";*/
 @import "lib/bootstrap.min.css";
 @import "lib/font-awesome.min.css";
 @import "lib/icofont.css";
@@ -213,6 +213,34 @@ header .container {
     max-width: 200px;    
 }
 
+/* SECTION TAGS */
+.section-tags {
+    background-image: url("../img/не-туда.jpg");
+}
+.section-tags .row div {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    margin: 1px;
+    background-color: rgba(42, 52, 54, 0.5);
+    color: #fff;
+}
+
+/* FOOTER */
+footer, footer a {
+	background-color: #466a78!important;
+    color:#fff;
+    
+}
+footer H5 {
+    color:#ffb135;
+}
+footer p {
+    margin-left: 15px;
+}
+
 /* SCROLL-TO-TOP */
 .scrollToTop {
   width: 40px;
@@ -243,17 +271,6 @@ header .container {
   color: #fff;
 }
 
-/* SECTION TAGS */
-.section-tags {
-    background-image: url("../img/не-туда.jpg");
-}
-.section-tags .row div {
-    width: 260px;
-    margin: 1px;
-    background-color: rgba(42, 52, 54, 0.5);
-    color: #fff;
-}
-
 /* DEFAULT */
 body {
   line-height: 24px;
@@ -268,6 +285,15 @@ a:hover {
 }
 p {
     margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
 }
 
 /* CONST */

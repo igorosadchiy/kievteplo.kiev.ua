@@ -7,14 +7,13 @@
 	$('.mainmenu li a, .logo a,.slicknav_nav li a').on('click', function () {
 		if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') &&
             location.hostname === this.hostname) {
-		  var $target = $(this.hash);
-		  $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-		  if ($target.length) {
-			var targetOffset = $target.offset().top;
-			$('html,body')
-			.animate({scrollTop: targetOffset}, 2000);
-		   return false;
-		  }
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 2000);
+                return false;
+            }
 		}
 	});
 	
@@ -32,7 +31,7 @@
 		$('html, body').animate({scrollTop : 0},2000);
 		return false;
 	});
-	    
+
     /*----------------------------
     Modal submit
     ------------------------------ */
@@ -54,7 +53,7 @@
             loader = $('#loader');
 
         $.ajax({
-            url: 'handler.php',
+            url: 'mail.php',
             type: 'POST',
             data: form.serialize(),
             beforeSend: function() {
@@ -82,6 +81,6 @@
     /*----------------------------
     Init WOW amimate
     ------------------------------ */
-    new WOW().init();
+//    new WOW().init();
     
 }(jQuery));
